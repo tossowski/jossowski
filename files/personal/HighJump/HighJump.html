@@ -1,0 +1,72 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>High Jump</title>
+    <! <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script> 
+
+    <script src="jquery.js"></script>
+    <script src="galleria/galleria-1.2.9.min.js"></script>
+<style>
+    #galleria{ width: 1250px; height: 665px; background: #B13131 }
+</style>
+  </head>
+
+  <body>
+    <h1></h1>
+
+
+        <div id="galleria">
+            <img src="high_jump_pictures/_WithOlympicChampion2_d2cropped.jpg" data-title="In Olympic Champ's Company" 
+
+
+data-description="
+
+This picture of our track team was taken in Warsaw in 1986. There are four high jumpers here; the two people standing on the right (I am the shorter athlete), and the two people standing to the right of our coach, Roman Wszola (far left, with a stopwatch). The other teammates were mainly middle distance runners. The true significance of this image is that the second person from the left is the <strong>Olympic champion in high jump from 1976, Jacek Wszola</strong> (our coach's son). Jacek Wszola's personal best of 235cm (7 ft & 8.52 in) would earn him a silver medal even in 2012 and was clearly beyond our reach. My personal best was 'only' 206cm (6 ft & 9.1 in) while Adam Kolwicz's (the shorter jumper standing next to Jacek) 217cm (7 ft & 1.4 in). Click <a href=http://www.youtube.com/watch?v=o2HtJU5w1UY>here</a> to <strong>see Jacek Wszola</strong> during the Olympiad in Montreal <em>(to return to this page you will need to press the 'Back' button).</em>"
+
+
+data-link="high_jump_pictures/_WithOlympicChampion2_d2cropped.jpg">
+
+
+<img src="high_jump_pictures/_AncientJump.jpg"  data-title="In the Air" data-description="
+
+You can see me here attempting to clear what looks like 200cm (6 ft & 6.7 in). I believe this picture was taken in 1988 or 1989, in Lodz, where I won a meet with that result. Even though, having to move to other things, I no longer had the time for 'make it or break it' practice (in fact, experts will notice that I am committing a minor technical error in this jump), my generally active life-style allowed me to clear reasonable heights for about 2 years. Unfortunately, in those days bringing a camera to a practice or even a competition seemed a major nuisance (digital cameras were still a glimmer in their inventors' eyes). It was easier to jump 200cm than to develop a picture, and one always thought that he could take that picture on the next day. Hence the pictures of my best jumps were never taken. Click for a larger version of the image <em>(to return to this page you will need to press the 'Back' button).</em>"
+
+
+
+
+ data-link="high_jump_pictures/_AncientJump.jpg">
+
+
+            <img src="high_jump_pictures/_HurdleJump2.jpg"  data-title="Hard @ Work" data-description="
+
+
+In the metric world, jumping  2m (6 ft & 6.7 in) is a magical threshold. Unless one has an exceptional, Olympic caliber talent (which I did not), a great deal of work is needed to attain that level. Even world champions cross this distinct barrier only once in their athletic career. Once on the 'other' side, a high jumper's results start looking 'professional'; in a layman's eye they may pass as those of a champion (it is easier to confuse 2.06m with 2.16m, than, say, 1.96m with 2.06). Alas, even though I enjoyed the experience, getting there was not easy. You can see me here performing two-footed 'hops' over hurdles at their highest setting. This picture was taken in my hometown in northern Poland. Click on the image for a larger version <em>(to return to this page you will need to press the 'Back' button).</em>"
+
+
+ data-link="high_jump_pictures/_HurdleJump2.jpg">
+        </div>
+
+
+        <script>
+            Galleria.loadTheme('galleria/themes/classic/galleria.classic.min.js');
+Galleria.configure({
+    lightbox: true,
+    showInfo: true,
+    imagePan: true
+});
+            Galleria.run('#galleria', {
+
+   dataConfig: function(img) {
+        return {
+            description: $(img).next('p').html()
+        }
+    },
+
+    extend: function(options) {
+        Galleria.get(0).$('info-link').click();
+    }
+
+});
+        </script>
+  </body>
+</html>

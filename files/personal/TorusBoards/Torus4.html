@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+      <meta charset="UTF-8">
+      <link rel="stylesheet", type="text/css", href="./Torus4.css">
+    </head>
+
+    
+    <body>
+      <script>
+	/* some global variables -- need to be synced with the *.css file */
+	img_anim_height = 400;
+	img_anim_width = 800;
+      </script>
+	  
+	  <div id="banner_holder">
+	  
+	
+	  
+	<!--  	  <p><img
+ style="border: 1px solid ; width: 912px; height: 200px;"
+ alt="Oscar Seurat's Banner" title="Oscar Seurat's Banner"
+ src="../BannerOscarSeurat4.jpg" align="middle" hspace="8"></p> -->
+	  <p><img style="border: 1px solid ; width: 926px; height: 250px; margin: 0 auto;" alt="University of Warsaw Wall of Science" title="University of Warsaw Wall of Science" src="../JaceksBanner.png" align="middle" hspace="0"></p>
+   </div>
+	  
+      <div id="anim_holder">
+	  
+	  <div id="topek_row">
+          <img class="dropcapek" src="./icons/Torek70.png"></img><span id="torus">orus' surface</span> is mapped here onto a square, and, as a result, the rotations of the colored bands correspond to the shifts on the square.  Press the buttons to see this mapping in action. Notice how the "slanted" motions along the guide lines on the torus (towards the end of the animation)  map onto the <em>diagonal</em> shifts on the square. <!-- <span style="padding-left: 350px;">&#9830;</span> -->
+		  <!-- Can you imagine what would happen if a guide line on the torus shifted one slot, say, counter-clockwise? What shift would that correspond to on the square? This type of motion is implemented in the full version of the game (in addition to two others), and such a game is referred to as the <em>true torus</em>.&#9830; -->
+      </div>
+
+
+    <p style="height: 40px;"></p>
+      <div class="TorusFrame">
+	   <img id="TorusImage" src="./3DTorus9_1000_001.png"></img>
+      </div>
+
+<div id="controlek">
+		 <a class="wrapper2" href="../index.html">
+		 	 <img id="uturn2" src="./UturnY.png"></img>
+			 <span class="tooltiptext2">Back</span>
+			 </a>
+
+   <div id="play_buttons">
+      
+      <button id="Ani" class="Animation" onclick="
+       var aM = document.getElementById('TorusImage');
+       var bT = document.getElementById('Ani');  
+       var pT = document.getElementById('Slow +');
+       var qT = document.getElementById('Slow');
+       if (bT.innerHTML == 'Fast'){
+           bT.innerHTML = 'Rewind';
+           /* reset other buttons */
+           qT.innerHTML = 'Slow';
+           pT.innerHTML = 'Turle';
+           aM.width = img_anim_width;
+           aM.heigth = img_anim_height;
+           aM.src = '';
+           aM.src = './TorusAnimation8NoLoop.gif?'+new Date().getTime();
+
+          } else {
+       var aM = document.getElementById('TorusImage');
+       var bT = document.getElementById('Ani');
+          /* Takes control of the image */
+           aM.src = './3DTorus9_1000_001.png';
+          /* restore the button's caption */
+           bT.innerHTML =  'Fast';
+          }
+	  ">Fast</button>
+
+      <button id="Slow" class="Animation" onclick="
+       var aM = document.getElementById('TorusImage');
+       var qT = document.getElementById('Slow');
+       var pT = document.getElementById('Slow +');
+       var bT = document.getElementById('Ani');
+       /* take controlo of the image */
+       if (qT.innerHTML == 'Slow'){
+           qT.innerHTML = 'Rewind';
+           /* reset other buttons */
+           pT.innerHTML = 'Slow +';
+           bT.innerHTML = 'Fast';
+           aM.src = '';
+           aM.src = './TorusAnim4fps.gif?'+ new Date().getTime();
+          } else {
+       var aM = document.getElementById('TorusImage');
+       var qT = document.getElementById('Slow');
+          /* Takes control of the image */
+           aM.src = './3DTorus9_1000_001.png';
+          /* restores the button's caption */
+           qT.innerHTML =  'Slow';
+                      
+          }
+	  ">Slow</button>
+
+
+      <button id="Slow +" class="Animation" onclick="
+       var aM = document.getElementById('TorusImage');
+       var qT = document.getElementById('Slow');
+       var pT = document.getElementById('Slow +');
+       var bT = document.getElementById('Ani');
+       /* take controlo of the image */
+       if (pT.innerHTML == 'Slow +'){
+           pT.innerHTML = 'Rewind';
+           /* reset other buttons */
+           qT.innerHTML = 'Slow';
+           bT.innerHTML = 'Fast';
+           aM.src = '';
+           aM.src = './TorusAnim2fps.gif?'+ new Date().getTime();
+          } else {
+       var aM = document.getElementById('TorusImage');
+       var pT = document.getElementById('Slow +');
+          /* Takes control of the image */
+           aM.src = './3DTorus9_1000_001.png';
+          /* restores the button's caption */
+           pT.innerHTML =  'Slow +';
+                      
+          }
+	  ">Slow +</button>
+
+
+
+      
+      </div>
+	  
+	  	   <a class="wrapper" href="./TorusBoards.html">
+	   	 	 <img id="play_now2" src="./PlayY.png"></img>
+			 <span class="tooltiptext">Play game</span>
+			 </a>
+	   </div>
+
+      </div>
+	  
+	  	  <div style="text-align: center; color: rgb(0, 51, 102);margin-top: 5px;"><small><a href="../TermsAndConditionsR.html">Terms
+of Use </a> &nbsp; &nbsp; &nbsp; &#9679; &nbsp;
+&nbsp; &nbsp;</small>Copyright
+© 2018 Oscar Seurat. All Rights Reserved.<small> &nbsp;
+&nbsp; &nbsp; &#9679; &nbsp; &nbsp; &nbsp; <a href="../PrivacyPolicyR.html">Privacy Policy</a></small>
+</div>
+    </body>
+
+
+
+
+</html>
+

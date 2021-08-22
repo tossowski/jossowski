@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>Viewer Test</title>
+    <! <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script> 
+
+    <script src="jquery.js"></script>
+    <script src="galleria/galleria-1.2.9.min.js"></script>
+<style>
+    #galleria{ width: 1250px; height: 620px; background: #B13131 }
+</style>
+  </head>
+
+  <body>
+
+
+<div id="galleria">
+    <div class="image">
+        <img src="high_jump_pictures/_WithOlympicChampion2_d2cropped.jpg">
+        <h2>Lorem ipsum title</h2>
+        <div class="desc">You can add <strong>strong</strong> tags or any other HTML as caption</div>
+    </div>
+</div>
+<script>
+Galleria.run('#galleria', {
+    dataConfig: function(img) {
+        return {
+            title: $(img).next('h2').html(), // tell Galleria to use the h2 as title
+            description: $(img).siblings(.desc).html() // tell Galleria to grab the content from the .desc div as caption
+        };
+    }
+});
+</script>
+
+
+
+
+  </body>
+</html>

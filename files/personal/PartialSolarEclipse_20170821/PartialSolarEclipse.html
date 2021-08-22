@@ -1,0 +1,96 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>Partial Solar Eclipse 08/21/2017 New York</title>
+    <! <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script> 
+
+    <script src="jquery.js"></script>
+    <script src="galleria/galleria-1.2.9.min.js"></script>
+<style>
+    #galleria{ width: 1400px; height: 665px; background: #B13131 }
+</style>
+  </head>
+
+  <body>
+    <h1></h1>
+
+
+        <div id="galleria">
+            <img src="Pictures/SheepMeadow.jpg" data-title="Central Park, Sheep Meadow" 
+
+
+data-description="
+Since the Great American Eclipse's paid no mind to business hours, lots of folk could not step out of the office for the occasion. I and others who were there wondered what would happen if 70% of the Sun's disk were covered ... 
+"
+
+
+
+data-link="Pictures/SheepMeadow.jpg">
+
+
+<img src="Pictures/SheepMeadow2.jpg"  data-title="Answer: Nothing." data-description="
+
+ Over 50% of the Sun's surface is now covered, yet below on the meadow you would never guess  that something tightened a strangling grip around the star. Unaware of what was happening, how could you help? Too bright for its own good, the Sun's glare is similar to a photographer's flash. A thin, horizontal wire is enough to create a round orb of blinding light that no one can look at (click on the image for a larger version)."
+
+ data-link="Pictures/SheepMeadow2.jpg">
+
+
+            <img src="Pictures/UnexpectedEclipse2.jpg"  data-title="Silent Havoc" data-description="
+
+So something carved the Sun away, and you would notice it only when the whole disk was gone. Even though my eclipse glasses gave me an hour of notice, I was not prepared this time. Not only if this had turned out to be the Judgement Day (my papers were not in order), but also for taking pictures. The glasses were useless for shooting the Sun's photos. I must have taken 100 of them to filter out these few that documented the event."
+
+
+ data-link="Pictures/SheepMeadow2.jpg">
+ 
+ 
+ 
+             <img src="Pictures/UnexpectedEclipse7.jpg"  data-title="Timing is Everything" data-description="
+
+In the end, the best photographic filter were the clouds. The forecast predicted clear skies, yet the opaque intruders visited at the moment of (how else?) the greatest coverage. Did they want to check out this commotion too?"
+
+ data-link="Pictures/UnexpectedEclipse7.jpg">
+ 
+ 
+  
+             <img src="Pictures/UnexpectedEclipse6.jpg"  data-title="Unexpected Helpers" data-description="
+
+			 At first sight, the pictures I took appeared to show no trace of the Eclipse. To my surprise, after an examination a few days later I found that five of them captured the partially covered Sun. It was the clouds -- the greatest enemy of astronomical observations -- that lent me a helping hand.
+			 
+"
+
+ data-link="Pictures/UnexpectedEclipse6.jpg">
+ 
+ 
+  
+             <img src="Pictures/UnexpectedEclipse5.jpg"  data-title="You Are Free To Go" data-description="
+
+     Had I not had the black film glasses (sold out on day of the Eclipse), I wouldn't have noticed the sign from the Heavens. Surely, an omen that you cannot see can't spell the Judgement Day, can it? Luckily for me, nothing strangled the living daylight out the Sun in New York on August 21st, 2017. I've got a bit more time to put my papers in order.
+	 
+"
+
+        </div>
+
+
+        <script>
+            Galleria.loadTheme('galleria/themes/classic/galleria.classic.min.js');
+Galleria.configure({
+    lightbox: true,
+    showInfo: true,
+    imagePan: true
+});
+            Galleria.run('#galleria', {
+
+   dataConfig: function(img) {
+        return {
+            description: $(img).next('p').html()
+        }
+    },
+
+    extend: function(options) {
+        Galleria.get(0).$('info-link').click();
+    }
+
+});
+        </script>
+  </body>
+</html>

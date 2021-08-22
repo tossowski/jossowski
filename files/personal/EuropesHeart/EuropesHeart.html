@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Paris - Europes Heart</title>
+  
+
+<style>
+    #galleria{ width: 1600px; height: 800px; background: #B13131 }
+</style>
+
+
+
+    <script src="jquery.js"></script>
+
+        <!-- load Galleria -->
+        <script src="galleria/galleria-1.2.9.min.js"></script>
+
+        <!-- load picasa plugin -->
+        <script src="galleria/plugins/picasa/galleria.picasa.min.js"></script>
+
+    </head>
+	
+ <body>
+    <h1></h1>
+
+
+        <div id="galleria">
+            <img src="EuropesHeartPictures/SacreCoeur4.jpg" data-title=""
+
+
+data-description="
+'Sacre Coeur' - doesn't the name sound beautiful?<br>
+<em>( As always, click on the images for larger versions)</em>"
+   
+
+data-link="EuropesHeartPictures/SacreCoeur4.jpg">
+
+
+
+<img src="EuropesHeartPictures/SomebodyLivesThere.jpg"  data-title="" data-description="
+
+Somebody lives there."
+
+ data-link="EuropesHeartPictures/SomebodyLivesThere.jpg">
+
+
+            <img src="EuropesHeartPictures/Napoleon_vs_Chopin2.jpg"  data-title="" data-description="
+Napoleon vs. Chopin -- the composer died in the arrowed house."
+
+
+ data-link="EuropesHeartPictures/Napoleon_vs_Chopin2.jpg">
+
+
+
+
+
+            <img src="EuropesHeartPictures/OnTheBridge.jpg"  data-title="" data-description="
+			
+Beauty does not require skyscrapers.
+"
+
+
+ data-link="EuropesHeartPictures/OnTheBridge.jpg">
+
+
+
+
+
+
+            <img src="EuropesHeartPictures/SmokingIsKillingMe.jpg"  data-title="" data-description="
+Unfortunately, lots of people smoke here."
+
+
+
+ 
+
+ data-link="EuropesHeartPictures/SmokingIsKillingMe.jpg">
+
+
+            <img src="EuropesHeartPictures/P1000275.jpg"  data-title="" data-description="
+
+&#10084;"
+
+
+ data-link="EuropesHeartPictures/P1000275.jpg">
+
+
+            <img src="EuropesHeartPictures/OneDayWellGetThere.jpg"  data-title="" data-description="
+
+One day we'll get there."
+
+ data-link="EuropesHeartPictures/OneDayWellGetThere.jpg">
+ 
+
+            <img src="EuropesHeartPictures/ArcTheTriomphe2.jpg"  data-title="" data-description="
+			
+The second of the two places in the box is where I come from (to within 25 miles). Why is it listed on the Arc of Triumph?"
+
+ data-link="EuropesHeartPictures/ArcTheTriomphe2.jpg">
+ 
+ 
+            <img src="EuropesHeartPictures/Versaille2.jpg"  data-title="" data-description="
+			Nice House! Wait, how many square feet was that?"
+
+ data-link="EuropesHeartPictures/Versaille2.jpg">
+      
+
+		
+		            <img src="EuropesHeartPictures/IveGotFamousNeighbours.jpg"  data-title="" data-description="
+                     Somebody famous lived here."
+
+ data-link="EuropesHeartPictures/IveGotFamousNeighbours.jpg">
+        
+		
+		
+
+ 
+ 
+ 
+ 
+        </div>
+
+        <script>
+            Galleria.loadTheme('galleria/themes/classic/galleria.classic.min.js');
+Galleria.configure({
+    lightbox: true,
+    showInfo: true,
+    imagePan: true
+});
+            Galleria.run('#galleria', {
+
+   dataConfig: function(img) {
+        return {
+            description: $(img).next('p').html()
+        }
+    },
+
+
+    extend: function(options) {
+        Galleria.get(0).$('info-link').click();
+    },
+
+
+
+
+    image_margin: 2,
+    thumb_margin: 2
+
+});
+        </script>
+  </body>
+</html>

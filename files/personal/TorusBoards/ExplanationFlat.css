@@ -1,0 +1,197 @@
+#MainFrame { /* The frame which encompasses all the elements in the middle vertical band of the page */
+    
+    outline: 1px solid black;
+ /*   margin-left: 20%;
+    margin-right: 20%; */
+    margin: 0 auto;
+	margin-top: 20px;
+    padding-bottom: 2px;
+	padding-top: 40px;
+    max-width: 926px;
+	min-width: 926px;
+	text-align: center;
+    background-image: url("./icons/VoronoiExperiments12.png");
+/*	background-repeat: no-repeat, repeat;
+    background-repeat: repeat; */
+
+
+}
+
+#unfolding_torus {
+	margin: 0 auto;
+	margin-top: 25px;
+	margin-bottom: 10px;
+	width: 400px;
+	outline: solid black 1px;
+	
+	
+}
+
+.JaceksBanner {
+    display: flex;
+  /*  border: 1px solid ;*/
+    width: 926px;
+    height: 250px;
+    margin: 0 auto;
+	border-bottom: 1px solid
+}
+
+
+
+#play_buttons{
+
+    background-color: white;
+    display: inline-block;
+    margin: 0 auto;
+    width: 70px;
+  
+    padding: 10px;
+    
+    margin-top: 11px;
+    justify-content: center;
+    margin-bottom: 14px;
+    outline: 1px solid black;
+
+}
+
+
+
+#TorusImage {  /* The initial image of the animation -- motionless */
+    position: relative;
+    width: 800px;  
+    height: 405px;
+	border-right: 1px solid
+}
+
+
+#banner_holder {
+	margin: 0 auto;
+	    width: 926px;
+    height: 250px;
+	
+}
+
+#top_row {
+	
+margin-top: -24px;
+margin-left:20px;
+margin-right:20px;
+font-size: 14pt;	
+text-align: justify;
+text-justify: inter-word;
+padding-bottom: 10px;	
+padding-top: 12px;
+padding-left: 20px;
+padding-right: 20px;
+padding-bottom: 15px;
+border: solid black 1px;
+
+background-image: url('./icons/YellowBar4.png');
+ /* background-image: url('./TorusGames/icons/VoronoiExperiments12.png'); */
+}
+
+.dropcap{
+	font-size: 200%;
+	float: left;
+	padding-bottom:-3px;
+	padding-right:5px
+	
+}
+
+#torus {
+	
+	font-size: 150%;	
+}
+
+#uturn {
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	padding-right: 0px;
+	padding-bottom: 40px;
+	padding-left: 10px;
+	float: left;
+	opacity: 1;
+	
+}
+
+#play_now {
+	display: flex;
+	width: 70px;
+	height: 70px;
+	padding-bottom: 40px;
+	padding-right: 5px;
+	float: right;
+	opacity: 1;
+	
+}
+
+#controls{
+	margin: 0 auto;
+	height: 70px;
+	
+	
+}
+
+.wrapper .tooltiptext {
+    visibility: hidden;
+    width: 85px;
+	margin-left: 338px; /* half of the width to center -- so they say */
+	margin-top: -13px;
+	color: black;
+   
+    text-align: center;
+    outline: solid gray 1px;
+ /*   border-radius: 6px; */
+    padding: 1px ;
+	font-size: 12pt;
+	font-weight: normal;
+	
+	/* background-image: url("./icons/VoronoiExperiments17.png"); */
+	background-color: Cornsilk;
+
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+
+   /* top: 90%;
+    left: 50%; */
+	opacity:1;	
+	
+}
+
+.wrapper:hover .tooltiptext{
+    visibility: visible;	
+}
+.wrapper2 .tooltiptext2 {
+    visibility: hidden;
+    width: 65px;
+	margin-left: -407px; /* half of the width to center -- so they say */
+	margin-top: -13px;
+	color: black;
+   
+    text-align: center;
+    outline: solid gray 1px;
+ /*   border-radius: 6px; */
+    padding: 0px ;
+	font-size: 12pt;
+	font-weight: normal;
+	
+	/* background-image: url("./icons/VoronoiExperiments17.png"); */
+	background-color: Cornsilk;
+
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+
+   /* top: 90%;
+    left: 50%; */
+	opacity:1;	
+	
+}
+
+.wrapper2:hover .tooltiptext2{
+    visibility: visible;	
+}

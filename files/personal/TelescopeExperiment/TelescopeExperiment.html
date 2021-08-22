@@ -1,0 +1,66 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>Telescope Experiment</title>
+    <! <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script> 
+
+    <script src="jquery.js"></script>
+    <script src="galleria/galleria-1.2.9.min.js"></script>
+<style>
+    #galleria{ width: 1250px; height: 665px; background: #B13131 }
+</style>
+  </head>
+
+  <body>
+    <h1></h1>
+
+
+        <div id="galleria">
+            <img src="telescope_experiment_pictures/TExperiment1A.jpg" data-title="An Object a Mile Away" 
+
+
+data-description="
+
+The amount of detail on this photograph of Manhattan skyline between 60th and 70th street is similar to that seen by an observer standing on the other side of the Hudson River. (Double clicking on the image will magnify it, but show features that the observer would not discern with an unaided eye. Any further magnification will not reveal new details; the image simply does not contain additional information.) &#x2666; The arrowed object, irresolvable due to the distance, is 1.07 miles away from the photographer (1,731 m, or 5,680ft). Ever wandered what that object would look like under magnification of 70x? Note, that such magnification cannot be obtained by hand held binoculars (whose power stops at 15x - 20x); a telescope on a sturdy mount is needed.    
+
+"
+
+data-link="telescope_experiment_pictures/TExperiment1A.jpg">
+
+
+<img src="telescope_experiment_pictures/TExperiment2.jpg"  data-title="An Object 80ft Away" data-description="
+
+The telescope brings one to about 80ft from the object. As you can see it is a <a href=http://cityroom.blogs.nytimes.com/2008/08/19/another-phase-of-riverside-park-south-opens>locomotive</a> in the River Side Park South in Manhattan. When you double click on the image you will see the clearly resolved smaller number “8625” (there are two them), as well as the words “NEW YORK” and “SYSTEM” in red color. Note that these features cannot be seen on the picture shown under the above link. The telescope I used for the experiment is capable of magnifications exceeding 200x; the reason for utilizing only half of that was the simplicity of setup. I have effectively used the telescope as a 2,032mm telephoto lens. 
+"
+
+
+
+ data-link="telescope_experiment_pictures/TExperiment2.jpg">
+
+ 
+        </div>
+
+
+        <script>
+            Galleria.loadTheme('galleria/themes/classic/galleria.classic.min.js');
+Galleria.configure({
+    lightbox: true,
+    showInfo: true,
+    imagePan: true
+});
+            Galleria.run('#galleria', {
+
+   dataConfig: function(img) {
+        return {
+            description: $(img).next('p').html()
+        }
+    },
+
+    extend: function(options) {
+        Galleria.get(0).$('info-link').click();
+    }
+
+});
+        </script>
+  </body>
+</html>

@@ -1,0 +1,250 @@
+body {
+
+    background-color: ivory;
+
+
+}
+
+
+div {
+
+  /*  outline: solid 1px lightgray; */
+    padding: 5px; 
+
+}
+
+#outer{
+
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 25px;
+    left: 4.7%;
+    width: 90%;
+    height: 90%;
+    min-width:1600px;
+    min-height:700px;
+    
+ 
+}
+
+
+
+.ib { 
+
+    display: inline-block;
+
+}
+
+#setup {
+    position: absolute;
+    text-align: center;
+    top: 2%;
+    right:77%;
+    height: 30%;
+    width:15%;
+    background-color: Cornsilk;   
+    outline: solid 1px gray;
+    min-width:230px;
+	      
+}
+
+#difficulty_label {
+    display: inline-block;
+    padding: 1px;
+}
+
+#combo_box {
+    display: inline-block;
+    padding: 1px;
+    padding-bottom:5px;
+
+}
+
+#scramble {
+
+    margin-top: 10px;
+
+}
+
+#game {  /* This is the div holding the table */
+    position:absolute;
+    display: flex;
+    align-items: center;
+    top: 2%;
+    left: 25%;
+    width: 50%;
+    height: 94%;
+    text-align: center;
+    outline: solid 1px lightgrey;
+	background-color: ivory;
+	background-color: ivory;
+    
+
+
+}
+
+#game_panel { /* This is the id of the table */
+    display: inline-block;
+    margin: 0 auto;
+    
+ /*   transform: translate(0%, 200%); */
+}
+
+
+#control_panel { /* a div which contains play controls */
+    position: absolute;
+    display: flex;
+    align-items: center;
+ /*  justify-content: center; */
+ /*  text-align: right; */
+    top: 2%;
+    left: 77.5%;
+    height: 13%;
+    width: 94px;
+    background-color: Cornsilk; 
+    outline: solid 1px grey;
+}
+
+#play_controls {
+    display: block;
+    /*  margin-left: 12%; */
+    margin-top: 2px;
+    margin-right: 12%;
+    width: 100px;
+    
+  /*  transform: translate(-260%, 0%); */
+}
+
+.controls {
+    width: 82px;
+    display: block;
+    padding: 4px;
+    margin: 0 auto;
+    margin-bottom: 3px;
+}
+
+#reset{
+    padding: 2px;
+}
+
+
+#links {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    right: 77%;
+    bottom: 2.9%;
+    width: 15%;
+  
+    background-color: Cornsilk;
+    padding-top: 10px;
+   
+    padding-left: 0px; */
+    padding-right: 0px;  
+    
+    padding-bottom: 10px;
+    outline: solid 1px grey;
+    min-width:230px;
+}
+
+a {
+    #display: block;
+    font-size: 16pt;
+
+}
+a:hover {
+    color: hotpink;
+}
+
+h3 {
+    padding: -2px;
+}
+
+hr {
+    width: 150;
+    size: 4;
+
+}
+
+.tabup {
+    font-size: 20px;
+    padding-left: 8.5%;
+    min-width: 230px;
+}
+
+.tabdown {
+    padding-left: 25%;
+}
+
+.thead{
+
+    font-size: 14pt;
+    font-weight: bold;
+    color:maroon;
+    /*  padding-left:12%; */
+    text-align: center;
+    padding-bottom: 5px;>
+    width: 230px;
+
+}
+
+
+#goal_table {
+
+    position: absolute;
+  /*  display: flex;*/
+    left: 73.5%;
+    bottom: 2.3%;
+    padding: 0px;
+    text-align: center:
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-left:-2px
+}
+
+#goal {
+    padding: 0px;
+    width: 58.5%;
+    max-width:360px;
+    
+}
+
+
+#ornL{
+
+    position: absolute;
+    top: 41%;
+    right:80.5%;
+    height: 150px;
+    width:160px;
+   transform: translate(0px, -5px); 
+    text-align: center;
+  /*  outline: solid 1px black; */
+    max-width:230px;
+
+}
+
+#ornR{
+
+    position: absolute;
+    top: 41%;
+    left: 79.4%;
+    height: 145px;
+    width:145px
+    text-align: center;
+ /*   outline: solid 1px black; */
+    max-width:230px;
+
+}
+
+
+#how {
+
+    position: absolute;
+    display: flex;
+    top: 28%;
+    left:78.5%;
+
+
+}

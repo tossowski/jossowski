@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Venus Transit 2012</title>
+  
+
+<style>
+    #galleria{ width: 1250px; height: 620px; background: #B13131 }
+</style>
+
+
+    <script src="jquery.js"></script>
+
+        <!-- load Galleria -->
+        <script src="galleria/galleria-1.2.9.min.js"></script>
+
+        <!-- load picasa plugin -->
+        <script src="galleria/plugins/picasa/galleria.picasa.min.js"></script>
+
+    </head>
+<body>
+    <div class="content">
+
+
+        <!-- Adding gallery images. This is just a container for the dynamic picasa images -->
+
+        <div id="galleria"></div>
+
+      
+    </div>
+    <script>
+
+    // Load the classic theme
+    Galleria.loadTheme('galleria/themes/classic/galleria.classic.min.js');
+
+
+
+
+    Galleria.run('#galleria', {
+
+      picasa: 'useralbum:OscarSierraSierra/ExpeditionToSeeTheTransitOfVenus06052012',
+      
+
+    extend: function(options) {
+        Galleria.get(0).$('info-link').click();
+    },
+
+
+    image_margin: 2
+  
+
+});
+
+    </script>
+    </body>
+</html>

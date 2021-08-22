@@ -1,0 +1,114 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>Models At Work</title>
+    <! <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script> 
+
+    <script src="jquery.js"></script>
+    <script src="galleria/galleria-1.2.9.min.js"></script>
+<style>
+    #galleria{ width: 1250px; height: 665px; background: #B13131 }
+</style>
+  </head>
+
+  <body>
+    <h1></h1>
+
+
+        <div id="galleria">
+            <img src="models_at_work_pictures/ModelsAtWork1.jpg" data-title="Models At Work" 
+
+
+data-description="
+
+New York being the world's advertising capital, it is only natural that from time to time one runs into models working on the street. I took this picture while walking to the 39th street ferry after work one evening. There’s usually very few people along the West Street’s eastern side; no shopping malls, no public transportation; far from everywhere. Quite likely the very reason for the photographer’s choice of the place.
+
+"
+
+data-link="models_at_work_pictures/ModelsAtWork1.jpg">
+
+
+<img src="models_at_work_pictures/ModelsAtWork2.jpg"  data-title="Paparazzi at Work" data-description="
+
+
+The face of the woman on the left seems recognizable. Isn’t she on the cover of every second fashion magazine? The few photos I took provided a minute of respite and made me recall a truly fitting <a href= http://www.jstor.org/discover/10.2307/20158831?uid=3739256&uid=2129&uid=2&uid=70&uid=4&sid=21102059776857>passage</a> from Ian McEvan’s ‘Dead as They Come’.
+
+"
+
+
+
+ data-link="models_at_work_pictures/ModelsAtWork2.jpg">
+
+
+
+<img src="models_at_work_pictures/ModelsAtWork4.jpg"  data-title="A Sleepy Sunday Morning" data-description="
+
+I run into this trio of a photographer (the man), a makeup artist (the woman in a yellow hat), and a model in the West Village while on my way to NYU library. Parking is difficult in the City, so I often leave the car on West Street, and walk to Washington Square Park on foot. There’s always something interesting to spot while crossing the Village; even on a Saturday morning with few people around.
+
+
+"
+
+
+
+ data-link="models_at_work_pictures/ModelsAtWork4.jpg">
+
+
+
+<img src="models_at_work_pictures/ModelsAtWork5.jpg"  data-title="Something is Amiss" data-description="
+
+The makeup artist springs up to make a correction--the image must be perfect. Looking at the model, I am thinking about the cookie I have just eaten, one she’s most likely not allowed to indulge, and the workout she must do today that I can easily skip. Far worse is probably some younger woman, a competitor, who, thanks to a random quirk in her features, may be <em>the</em> woman of the next photo-shoot.
+
+
+
+
+"
+
+
+
+ data-link="models_at_work_pictures/ModelsAtWork5.jpg">
+
+
+
+<img src="models_at_work_pictures/MonaLisaNewYork2.jpg"  data-title="Mona Lisa New York" data-description="
+
+
+Taken at an oriental food stand in Downtown Manhattan in the summer of 2009.
+"
+
+
+
+ data-link="models_at_work_pictures/MonaLisaNewYork2.jpg">
+
+
+
+
+
+
+
+ 
+        </div>
+
+
+        <script>
+            Galleria.loadTheme('galleria/themes/classic/galleria.classic.min.js');
+Galleria.configure({
+    lightbox: true,
+    showInfo: true,
+    imagePan: true
+});
+            Galleria.run('#galleria', {
+
+   dataConfig: function(img) {
+        return {
+            description: $(img).next('p').html()
+        }
+    },
+
+    extend: function(options) {
+        Galleria.get(0).$('info-link').click();
+    }
+
+});
+        </script>
+  </body>
+</html>

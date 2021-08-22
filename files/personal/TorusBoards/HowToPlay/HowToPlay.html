@@ -1,0 +1,79 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>How To Play</title>
+    
+   <script src="jquery.js"></script>	
+	<link rel="stylesheet" href="galleria/themes/classic/galleria.classic.css">
+    <script src="./galleria/galleria-1.2.9.min.js"></script>
+ 
+
+<style>
+    #galleria{ width: 1250px; height: 665px; background: #B13131 }
+</style>
+  </head>
+
+  <body>
+    <h1></h1>
+
+
+        <div id="galleria">
+            <img src="how_to_play_pictures/Explanations2NT.png" data-title="How To Play" data-description="
+			These slides explain the function of the controls in the Android version of <em>Torus Boards</em>. &#10022; See the similar
+			slides for the <a href='../WindowsExpl.html'>Windows</a> and <a href='../MacOSExpl.html'>MacOS</a> apps.
+			<div style='text-align: center; color: #800000;'>
+			&#10016;
+			</div>
+			Please watch a youtube <a href=https://www.youtube.com/watch?v=Wy-MaCT_jK0>video</a> showing an example of a 'Duck' level game." data-link="how_to_play_pictures/Explanations2NT.png">
+           <img src="how_to_play_pictures/Explanations3NT.png"  data-title="Load From File Menu" data-description="
+			These slides explain the function of the controls in the Android version of <em>Torus Boards</em>. &#10022; See the similar
+			slides for the <a href='../WindowsExpl.html'>Windows</a> and <a href='../MacOSExpl.html'>MacOS</a> apps.
+			<div style='text-align: center; color: #800000;'>
+			&#10016;
+			</div>
+			Please watch a youtube <a href=https://www.youtube.com/watch?v=Wy-MaCT_jK0>video</a> showing an example of a 'Duck' level game." data-link="how_to_play_pictures/Explanations2NT.png">		   
+		   " data-link="how_to_play_pictures/Explanations3NT.png">
+		    <img src="how_to_play_pictures/Explanations4NT.png"  data-title="Save Game Menu" data-description="
+			These slides explain the function of the controls in the Android version of <em>Torus Boards</em>. &#10022; See the similar
+			slides for the <a href='../WindowsExpl.html'>Windows</a> and <a href='../MacOSExpl.html'>MacOS</a> apps.
+			<div style='text-align: center; color: #800000;'>
+			&#10016;
+			</div>
+			Please watch a youtube <a href=https://www.youtube.com/watch?v=Wy-MaCT_jK0>video</a> showing an example of a 'Duck' level game."
+			
+			" data-link="how_to_play_pictures/Explanations4NT.png">
+			 <img src="how_to_play_pictures/Explanations5NT.png"  data-title="Other Items Menu" data-description="
+			 
+			 These slides explain the function of the controls in the Android version of <em>Torus Boards</em>. &#10022; See the similar
+			slides for the <a href='../WindowsExpl.html'>Windows</a> and <a href='../MacOSExpl.html'>MacOS</a> apps.
+			<div style='text-align: center; color: #800000;'>
+			&#10016;
+			</div>
+			Please watch a youtube <a href=https://www.youtube.com/watch?v=Wy-MaCT_jK0>video</a> showing an example of a 'Duck' level game."
+			 
+			 " data-link="how_to_play_pictures/Explanations5NT.png">
+        </div>
+
+        <script>
+            Galleria.loadTheme('galleria/themes/classic/galleria.classic.min.js');
+Galleria.configure({
+    lightbox: true,
+    showInfo: true,
+    imagePan: true
+});
+            Galleria.run('#galleria', {
+
+   dataConfig: function(img) {
+        return {
+            description: $(img).next('p').html()
+        }
+    },
+
+    extend: function(options) {
+        Galleria.get(0).$('info-link').click();
+    }
+
+});
+        </script>
+  </body>
+</html>

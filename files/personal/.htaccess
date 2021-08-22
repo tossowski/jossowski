@@ -1,0 +1,13 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^jacek\.oscarseurat\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.jacek\.oscarseurat\.com$
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^/?$ "http\:\/\/jacek\.oscarseurat\.com\/index\.html" [R=301,L]
+RewriteCond %{HTTP_HOST} ^jacekossowski\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.jacekossowski\.com$
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^/?$ "http\:\/\/jacek\.oscarseurat\.com\/index\.html" [R=301,L]
+

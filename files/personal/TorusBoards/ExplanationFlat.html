@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+      <meta charset="UTF-8">
+      <link rel="stylesheet", type="text/css", href="./ExplanationFlat.css">
+    </head>
+
+    
+    <body>
+
+	  
+	  <div id="banner_holder">
+	  
+	<!--  <p><img
+ style="border: 1px solid ; width: 912px; height: 200px;"
+ alt="Oscar Seurat's Banner" title="Oscar Seurat's Banner"
+ src="../BannerOscarSeurat4.jpg" align="middle" hspace="8"></p> -->
+
+
+	  	 <p><img style="border: 1px solid ; width: 926px; height: 250px; margin: 0 auto;" alt="University of Warsaw Wall of Science" title="University of Warsaw Wall of Science" src="../JaceksBanner.png" align="middle" hspace="0"></p> 
+   </div>
+	  
+      <div id="MainFrame">
+	  
+	   <div id="top_row">
+ <img class="dropcap" src="./icons/Torek70.png"></img> <span id="torus">his animation</span> explains how one can naturally represent a torus as a flat square. First, a torus is cut vertically along a plane passing through its center of symmetry. After the obtained cylinder is straightened, it is cut along its axis and flattened. &#9830; One could reconstruct the original torus by glueing the opposite sides of the square. Glueing the first pair would give back the cylinder, glueing the second (with the square's sides having become circles) - would give back the torus. &#9830;  Hence a torus can be thought of as a square with suitably identified points on its <a href="http://mathworld.wolfram.com/Torus.html">perimeter</a>. In this representation, the motions of horizontal and vertical bands on a torus become wrapping motions of rows and columns (and diagonals) of the <a href="./Torus4.html">square</a>.
+</div>
+	  
+	  
+         <img id="unfolding_torus" src="./CuttingTorus6_Start.gif"></img>
+		 
+		 <div id="controls">
+		 <a class = "wrapper2" href="../index.html">
+		 	 <img id="uturn" src="./UturnY.png"></img>
+			 <span class="tooltiptext2">Back</span>
+			 </a>
+	     <div id="play_buttons">
+	        
+      
+            <button id="Ani" class="Animation" onclick="
+               var aM = document.getElementById('unfolding_torus');
+			   var bT = document.getElementById('Ani');  
+			   if (bT.innerHTML == 'Play'){
+			       bT.innerHTML =  'Rewind'
+                   aM.src = './CuttingTorus6.gif?'+new Date().getTime();
+                  } else {
+                   var aM = document.getElementById('unfolding_torus');
+                   var bT = document.getElementById('Ani');
+                   /* Takes control of the image */
+                   aM.src = './CuttingTorus6_Start.gif';
+                   /* restore the button's caption */
+                   bT.innerHTML =  'Play';
+                  }
+	        ">Play</button>
+			
+	   </div>
+	   <a class="wrapper" href="./TorusBoards.html">
+	   	 	 <img id="play_now" src="./PlayY.png"></img>
+			 <span class="tooltiptext">
+			  Play game
+			 </span>
+			 </a>
+	   </div>
+
+      </div>
+	  <div style="text-align: center; color: rgb(0, 51, 102);margin-top: 5px;"><small><a href="../TermsAndConditionsR.html">Terms
+of Use </a> &nbsp; &nbsp; &nbsp; &#9679; &nbsp;
+&nbsp; &nbsp;</small>Copyright
+© 2018 Oscar Seurat. All Rights Reserved.<small> &nbsp;
+&nbsp; &nbsp; &#9679; &nbsp; &nbsp; &nbsp; <a href="../PrivacyPolicyR.html">Privacy Policy</a></small>
+</div>
+    </body>
+
+
+
+
+</html>
+

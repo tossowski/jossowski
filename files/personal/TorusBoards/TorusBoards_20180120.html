@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet", type="text/css", href="TorusGames.css">
+  </head>
+
+  
+  <body>
+    
+    <script src="./Utils6.js" type="text/javascript"></script>
+    <script src="./OscarsSquare6.js", type="text/javascript"></script>
+    <script src="./GameShift6.js", type="text/javascript"></script>    
+
+   <div id="outer">
+
+    <div class="ib", id="setup">   <!-- "ib" means inline block; css will set this class' display property to inline-block
+                                         which will make every element of that class not to be a block - but a piece that
+                                         is horizontally as small as it makes sense -->
+            <h1>Torus Games</h1>
+           <div id="difficulty_label">Difficulty:</div>
+           <div id="combo_box">
+	     <select id="comboA" onchange="var opt = this.value; var list=opt.split(' x '); window.location.href = './TorusGames.html' + '?N='+list[0]+'&M='+list[1];">
+	        <option value="3 x 3">3 x 3</option>
+	        <option value="4 x 2">4 x 2</option>
+	        <option value="6 x 2">6 x 2</option>
+	        <option value="6 x 3">6 x 3</option>
+	        <option value="8 x 2">8 x 2</option>
+	        <option vlaue="8 x 4">8 x 4</option>
+	        <option value="9 x 3">9 x 3</option>
+	        </select>
+                <script>
+	         var N = parseInt(findGetParameter("N"));
+	         var M = parseInt(findGetParameter("M"));
+	  
+	         if (isNaN(N) || isNaN(M)){
+	             N = 3;
+	             M = 3;
+	            }
+	         document.getElementById("comboA").value = N + ' x ' + M;
+	        </script>
+	   </div>
+
+	   <div id="scramble">
+             <button class="controls" onclick="G.scramble(50); G._oS.draw(canvas);">Scramble</button>
+	     <button id="reset" class="controls" onclick="window.location.href = './TorusGames.html' + '?N=' + N +'&M=' +  M ;">Unscramble</button>
+          </div>
+    </div>
+
+
+    <div class="ib", id="game">
+      <script src="./Game6.js", type="text/javascript"></script>
+    </div>
+
+
+
+    <div id="control_panel">
+       <div id="play_controls"> 
+           <button class="controls" onclick="G.replayShift(false); G._oS.draw(canvas);">Undo</button>
+           <button class="controls" onclick="G.replayShift(true); G._oS.draw(canvas);">Redo</button>
+           <button class="controls" onclick="G.reset(); G._oS.draw(canvas);">Restart</button>
+       </div>
+    </div>
+
+    <div id="links">
+
+      <table style="margin: 0 auto;">
+        <tr>
+	  <td class="thead">Get Full Versions</td>
+	</tr>
+
+	<tr>
+          <td class="tabup">
+	    &#9786; Save the starting grid<br>
+	    &#9786; Save all your moves<br>
+	    &#9786; Play the solution
+	  </td>
+	</tr>
+	<tr>
+	  <td>
+            <hr></hr>
+	  </td>
+	</tr>
+
+	
+	<tr>
+	  <td class="tabdown">
+        &#9752 &nbsp; <a href="http://www.sudokustories.com">&nbsp;iPhone</a><br>
+        &#9752; &nbsp; <a href="http://www.sudokustories.com">Android</a><br>
+        &#9752; &nbsp; <a href="http://www.sudokustories.com">Desktop</a><br>
+	  </td>
+	</tr>
+	
+
+
+      </table>
+   </div>
+
+
+
+    <table id="goal_table" cellpadding=0>
+      <tr>	  <td class="thead">Your Goal</td> </tr>
+
+      <tr> <td align="center" style="padding: 0px; margin=0px"> <img id="goal" src="./Goal_0x0.jpg"></img> </td> </tr>
+    </table>
+
+
+     <!-- The script to figure which goal image to display -->
+     <script>
+       var file =  "./" + "Goal_" + N + 'x' + M + ".jpg";
+       document.getElementById("goal").src = file;
+    </script>    
+
+	<a class="blink" href="../index.html">
+    <img id="ornL" src="BinarizedFlowerC11BackRS.png"></img>    <!-- BachSunflower2.jpg -->
+	</a>
+    <img id="ornR" src="BinarizedFlowerC11QRS.png"></img>
+    
+    <a id="how" class="thead" href="http://www.sudokustories.com">&#9917; &nbsp;How To Play &nbsp; &#9918;</a>
+    </div> <!-- outer -->
+      
+
+
+  </body>
+
+	 
+
+</html>
