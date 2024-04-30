@@ -28,7 +28,7 @@ var P = 1877;
 var r = 12;
 var c = 10;
 
-function bin(x){
+function funcA(x){
 
     if ( x >= m_array[m_array.length-1]){
 	return -1;
@@ -45,9 +45,9 @@ function bin(x){
     return -1;
 }
 
-function seat(id){
+function funcB(id){
     var A = (id - m)/s;
-    var B = bin(A);
+    var B = funcA(A);
     if (B == -1)
 	return -1;
     var C = (B*P) % (r*c);
@@ -63,7 +63,7 @@ function findSeating() {
         var assignedSeatTextBox = document.getElementById("assignedSeat");
 
         // Assign the paragraph element a value
-    assignedSeatTextBox.innerHTML = String(seat(studentID));
+    assignedSeatTextBox.innerHTML = String(funcB(studentID));
 
     }
     
